@@ -1,0 +1,47 @@
+EJERCICIO 8.3 - GESTIÓN DE EVENTOS - PYTHON Y TKINTER
+======================================================
+
+Libro: Leonardo Bermón Angarita, Ejercicios de programación orientada a objetos con Java y UML.
+Sección 8.3, página impresa 495. Se incluyen las ampliaciones propuestas en página 517.
+
+EJECUCIÓN EN VS CODE / POWERSHELL
+1. Descomprime el ZIP en tu carpeta actividad3.
+2. Abre la terminal de VS Code y entra en la carpeta:
+   cd .\Ejercicio_8_3
+3. Ejecuta:
+   python principal.py
+
+No necesita instalar librerías externas: tkinter y math vienen con Python.
+Se incluyen cinco imágenes PNG en la carpeta imagenes. No las borres.
+
+ARCHIVOS
+- principal.py: función main y arranque del programa.
+- ventana_principal.py: menú que permite seleccionar entre cinco figuras.
+- ventana_figura.py: ventana de cada figura, control de eventos y validaciones.
+- figuras_geometricas.py: clase padre y las cinco clases geométricas hijas.
+- imagenes/*.png: imágenes de referencia mostradas en la ventana.
+
+FIGURAS Y FÓRMULAS
+Cilindro (r, h):     V = pi*r^2*h; S = 2*pi*r*(h+r)
+Esfera (r):         V = (4/3)*pi*r^3; S = 4*pi*r^2
+Pirámide cuadrada (b,h,a): V=b^2*h/3; S=b^2+2*b*a
+Cubo (l):           V = l^3; S = 6*l^2
+Prisma rectangular (largo,ancho,altura):
+   V = largo*ancho*altura
+   S = 2*(largo*ancho + largo*altura + ancho*altura)
+
+Unidades: todas las dimensiones se ingresan en cm,
+volumen en cm^3 y superficie en cm^2.
+
+VALORES PARA PROBAR
+Cilindro: radio=2, altura=5 -> volumen=62.83, superficie=87.96
+Esfera: radio=3 -> volumen=113.10, superficie=113.10
+Pirámide: base=6, altura=4, apotema=5 -> volumen=48.00, superficie=96.00
+Cubo: lado=3 -> volumen=27.00, superficie=54.00
+Prisma: largo=4, ancho=3, altura=2 -> volumen=24.00, superficie=52.00
+
+Prueba también dejar un campo vacío y escribir letras: debe aparecer una alerta.
+
+NOTA SOBRE EL LIBRO
+En el código Java original, el volumen de la esfera utiliza 1.333 en lugar de 4/3.
+Se utiliza 4/3 en esta adaptación para un resultado matemáticamente más preciso.
